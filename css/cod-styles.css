@@ -23,27 +23,62 @@
     font-weight: bold;
 }
 
-/* Layout - Call of Duty Wiki Discord bot pages */
-.layout-cod-discord-bot-cmds .card-text.mdl-card {
+/* Home layout */
+.layout-home .card-text.mdl-card {
+    width: 712px;
+    margin: auto;
+    height: max-content;
+}
+
+.layout-home .card-text>.mdl-card__title {
+    color: #fff;
+    height: 100px;
+    background-color: #2979ff;
+}
+
+.layout-home .card-button.mdl-card {
+    width: 712px;
+    margin: auto;
+    height: max-content;
+}
+
+.layout-home .card-button>.mdl-card__title {
+    color: #fff;
+    height: 100px;
+    background-color: #2979ff;
+}
+
+/* Bot pages */
+.layout-bot-cmds .card-text.mdl-card {
     width: 1024px;
     margin: auto;
     height: max-content;
 }
 
-.layout-cod-discord-bot-cmds .card-text>.mdl-card__title {
+.layout-bot-cmds .card-text>.mdl-card__title {
     color: #fff;
     height: max-content;
     background-color: #2979ff;
 }
 
-.layout-cod-discord-bot-cmds .links {
+.layout-bot-cmds .links {
     overflow-wrap: break-word;
     word-wrap: break-word;
 }
 
 /* Mobile devices - portrait */
 @media screen and (max-width: 425px) and (orientation: portrait) {
-    .layout-cod-discord-bot-cmds .card-text.mdl-card {
+    .layout-home .card-text.mdl-card {
+        width: auto;
+        margin: auto;
+        height: max-content;
+    }
+    .layout-home .card-button.mdl-card {
+        width: auto;
+        margin: auto;
+        height: max-content;
+    }
+    .layout-bot-cmds .card-text.mdl-card {
     width: auto;
     margin: auto;
     height: max-content;
@@ -53,7 +88,17 @@
 
 /* Mobile devices - landscape */
 @media screen and (min-width: 425px) and (max-width: 768px) and (orientation: landscape) {
-    .layout-cod-discord-bot-cmds .card-text.mdl-card {
+    .layout-home .card-text.mdl-card {
+        width: auto;
+        margin: auto;
+        height: max-content;
+    }
+    .layout-home .card-button.mdl-card {
+        width: auto;
+        margin: auto;
+        height: max-content;
+    }
+    .layout-bot-cmds .card-text.mdl-card {
     width: auto;
     margin: auto;
     height: max-content;
@@ -64,7 +109,17 @@
 /* 1024+ = large tablets, laptops and pcs ie. iPad Pro in landscape = 1366px.
 */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .layout-cod-discord-bot-cmds .card-text.mdl-card {
+    .layout-home .card-text.mdl-card {
+        width: auto;
+        margin: auto;
+        height: max-content;
+    }
+    .layout-home .card-button.mdl-card {
+        width: auto;
+        margin: auto;
+        height: max-content;
+    }
+    .layout-bot-cmds .card-text.mdl-card {
     width: auto;
     margin: auto;
     height: max-content;
