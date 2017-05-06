@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Official site of Soap Shadow.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Moderation - Bots - My Little Pony Wiki Discord - Soap Shadow</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="../../../css/material-icons-font.css">
+    <link rel="stylesheet" href="../../../css/rubik-font.css">
+    <link rel="stylesheet" href="../../../css/discord/mlp-material.min.css">
+    <link rel="stylesheet" href="../../../css/discord/mlp-styles.css">
+    <script defer src="../../../js/material.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="layout-title mdl-layout-title">Moderation</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="nav-link mdl-navigation__link" href="https://soapshadow.tk">Home</a>
+                    <a class="nav-link mdl-navigation__link" href="../../cod-wiki">Call of Duty Wiki Discord</a>
+                    <a class="nav-link mdl-navigation__link" href="../../mlp-wiki">My Little Pony Wiki Discord</a>
+                </nav>
+            </div>
+            <!-- Tabs -->
+            <div class="layout mdl-layout__tab-bar mdl-js-ripple-effect">
+                <a href="#info" class="mdl-layout__tab is-active">Info</a>
+                <a href="#general-cmds" class="mdl-layout__tab">General Cmds</a>
+                <a href="#mod-cmds" class="mdl-layout__tab">Mod Cmds</a>
+                <a href="#chat-log-cmds" class="mdl-layout__tab">Chat Log Cmds</a>
+                <a href="#advanced-cmds" class="mdl-layout__tab">Advanced Cmds</a>
+                <div style="visibility: hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+            </div>
+        </header>
+        <div class="layout-drawer mdl-layout__drawer">
+            <span class="mdl-layout-title">Navigation</span>
+            <nav class="mdl-navigation">
+                <a class="nav-link mdl-navigation__link" href="https://soapshadow.tk">Home</a>
+                <a class="nav-link mdl-navigation__link" href="../../cod-wiki">Call of Duty Wiki Discord</a>
+                <a class="nav-link mdl-navigation__link" href="../../mlp-wiki">My Little Pony Wiki Discord</a>
+                <span class="nav-link-group mdl-navigation__link">BOTS</span>
+                <a class="mdl-navigation__link" href="#">Moderation</a>
+                <span class="nav-link-group mdl-navigation__link">RULES</span>
+                <a class="mdl-navigation__link" href="#">Chat Rules</a>
+            </nav>
+        </div>
+
+        <main class="mdl-layout__content">
+
+            <section class="mdl-layout__tab-panel is-active" id="info">
+                <div class="layout-bot-cmds page-content" style="margin: 16px">
+
+                    <!-- Info -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">Info</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Moderation is the main bot in the server. It is responsbile for logging all activities such as user joins, user role
+                            changes and user bans.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Bot Prefix -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">Bot Prefix</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            The prefix of the bot is an exclamation mark <b>!</b>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="mdl-layout__tab-panel" id="general-cmds">
+                <div class="layout-bot-cmds page-content" style="margin: 16px">
+                    <!-- Activity - User, Global -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">activity [user] ([--global])</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Gets the number of messages sent by a user in the last 30 days, either server only or globally.
+                            <br/><br/>Your activity - ie. !activity
+                            <br/>Another user's activity - ie. !activity @T-Marey
+                            <br/><br/>Your activity globally - ie. !activity --global
+                            <br/>Another user's activity globally - ie. !activity @Callofduty4 --global
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Change Log -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">changelog</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Shows the change log of bot updates, sorted from latest to oldest.
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Chid -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">chid</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Outputs the channel id where you post this command.
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Help -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">help</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Gives a link to the official documentation site of the bot.
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Invite -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">invite</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Gives an invite link to add the bot to your own server.
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Most Active -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">mostactive [page number] ([--global])</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Gets the number of messages sent by the 20 most active users in the server, or gets the top 20 active users globally.
+                            <br/><br/>20 most active in the server - ie. !mostactive
+                            <br/>Next 20 most active in the server, page 2 - ie. !mostactive 2
+                            <br/><br/>20 most active globally - ie. !mostactive --global
+                            <br/>Next 20 most active globally, page 2 - ie. !mostactive 2 --global
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Ping -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">ping</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Wakey wakey.
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Poll -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">poll [question]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Creates a yes/no poll.
+                            <br/><br/>ie. !poll Does this work?
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Reddit - Subreddit Name, Sort Option -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">reddit [subreddit name] [sort option]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Gets reddit posts.
+                            <br/><br/>ie. !reddit worldnews rising
+                            <br/><br/>Sort options: comments, controversial, hot, gilded, new, promoted, rising, top.
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Roblox - User Info -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">roblox user info [user]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Retrieves info about a user from Roblox.
+                            <br/><br/>ie. !roblox user info soap
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Self -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">self</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Outputs your user id.
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Server ID -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">serverid</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Outputs the server's unique id.
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Stats -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">stats</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Shows info about the bot.
+                            <br/><br/>Other commands which do the same: about, statistics.
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="mdl-layout__tab-panel" id="mod-cmds">
+                <div class="layout-bot-cmds page-content" style="margin: 16px">
+
+                    <!-- Ban -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">ban [user] [reason]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Bans a user.
+                            <br/><br/>ie. !ban @343TheGuiltyProphet being guilty
+                            <br/><br/>Command restriction: <span style="color:#32CD32;">Wiki Moderators</span>, <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>
+                    &nbsp;
+                    <!-- Kick -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">kick [user] [reason]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Kicks a user from the server. It also sends them a message with the reason.
+                            <br/><br/>ie. !kick @Tem being a foo
+                            <br/><br/>Command restriction: <span style="color:#32CD32;">Wiki Moderators</span>, <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Mute -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">mute [user] ([length];) [reason]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Mutes a user, making them unable to post any messages, whilst still remaining in the server.
+                            <br/>By default, the mute length is one hour.
+                            <br/><br/>Mute a user for one hour - ie. !mute @Shad discussing TF2.
+                            <br/><br/>Mute a user for one day - ie. !mute @Shad 1d; discussing TF2.
+                            <br/><b>Note: The semi-colon ; must be included. It is used to separate the time length from the reason.</b>
+                            <br/><br/>Time lengths: seconds = s, minutes = m, hour = h, day = d.
+                            <br/><br/>Command restriction: <span style="color:#32CD32;">Wiki Moderators</span>, <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Prune -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">prune [no of msgs] [user(s)]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Deletes the specified number of messages. The maximum is 100 per command.
+                            <br/><br/>Delete 99 messages from a single user - !prune 99 @T-Marey
+                            <br/><br/>Delete 15 messages from multiple users - !prune 15 @HassieSwift621 @T-Marey
+                            <br/><b>Note: There is no separator to separate the list of users.</b>
+                            <br/><br/>Command restriction: <span style="color:#32CD32;">Wiki Moderators</span>, <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Soft Ban -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">softban [user] [reason]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Bans a user and immediately bans. In this process, all messages sent in the last 24 hours by the user are deleted.
+                            <br/><br/>ie. !softban @Callofduty4 being a feesh.
+                            <br/><br/>Command restriction: <span style="color:#32CD32;">Wiki Moderators</span>, <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Temp Ban -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">tempban [user] [length]; [reason]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Bans a user for a specifc amount of time.
+                            <br/><br/>ie. !tempban @HarryBerry 1h; using !talk
+                            <br/><b>Note: The semi-colon ; must be included. It is used to separate the time length from the reason.</b>
+                            <br/><br/>Time lengths: seconds = s, minutes = m, hour = h, day = d.
+                            <br/><br/>Command restriction: <span style="color:#32CD32;">Wiki Moderators</span>, <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Un-mute -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">unmute [user] [reason]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Un-mutes a user.
+                            <br/><br/>ie. !unmute @Shad agreed to stop talking about TF2.
+                            <br/><br/>Command restriction: <span style="color:#32CD32;">Wiki Moderators</span>, <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Warn -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">warn [user] [reason]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Warns a user with the specified reason.
+                            <br/><br/>ie. !warn @Butterflai being a flea.
+                            <br/><br/>Command restriction: <span style="color:#32CD32;">Wiki Moderators</span>, <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="mdl-layout__tab-panel" id="chat-log-cmds">
+                <div class="layout-bot-cmds page-content" style="margin: 16px">
+
+                    <!-- Moderation -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">moderation [user]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Shows the moderation log for a user, ie. all bans, kicks etc.
+                            <br/><br/>ie. !moderation @Princess Iris
+                            <br/><br/>Command restriction: <span style="color:#32CD32;">Wiki Moderators</span>, <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Moderator -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">moderator [user]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Shows all the moderator actions that a mod has performed, ie. all bans issued, kicks issued etc.
+                            <br/><br/>ie. !moderator @Crimson
+                            <br/><br/>Command restriction: <span style="color:#32CD32;">Wiki Moderators</span>, <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Reason -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">reason [case no] [new reason]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Changes the reason for a moderation, ie. a ban, kick etc.
+                            <br/><br/>ie. !reason 12 Spamming multiple times.
+                            <br/><br/>Command restriction: <span style="color:#32CD32;">Wiki Moderators</span>, <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Resolve -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">resolve [case no]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Removes a moderation log from a user.
+                            <br/><br/>ie. !resolve 3
+                            <br/><br/>Command restriction: <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Search Logs -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">searchlogs [parameters]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Search the chat log.
+                            <br/><br/>Search logs without a specifc user, searchlogs all [parameters] - ie. !searchlogs all --find:'hi'
+                            <br/><br/>Search for a specific user in the logs, searchlogs [user] [parameters] - ie. !searchlogs @TheCountess --find:'hi'
+                            <br/><br/><br/>Parameters
+                            <br/><ul>
+                                <li>--latest - This will order the log search from latest message to oldest message.</li>
+                                <li>--find:'parameter' - Find a specific word/phrase. <br/><b>Note</b>: The quotation mark ' must be included.</li>
+                                <li>--show:# - Only show a specific number of search results. The max is 30 per page.</li>
+                                <li>--ignoreself - This removes your messages from the search results.</li>
+                                <li>--here - Only search your current channel.</li>
+                                <li>--ids - Show the user IDs and message IDs.</li>
+                                <li>--page:# - Choose search results page number</li>
+                            </ul>
+                            <br/><b>Note: No separator is used to separate each search parameter. Instead a double dash -- is used to declare each parameter.</b>
+                            <br/><br/><br/>Command restriction: <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="mdl-layout__tab-panel" id="advanced-cmds">
+                <div class="layout-bot-cmds page-content" style="margin: 16px">
+
+                    <!-- Autorole -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">autorole [role(s)]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Automatically set roles when a user joins the server.
+                            <br/><br/>Set the role to unverified and users - ie. !settings autorole unverified users
+                            <br/><b>Note: No separator is used to separate the list of roles.</b>
+                            <br/><br/>Turn off auto role - ie. !settings autorole off.
+                            <br/><br/>Command restriction: <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Command -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">command [parameter]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Manage custom commands.
+                            <br/><br/>List custom commands - ie. !command list
+                            <br/>Create a command, command create [name] [cmd] - ie. !command create test This is a test command.
+                            <br/>Delete a command, command delete [name] - ie. !command delete test
+                            <br/><br/>Command restriction: <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Create Mute -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">createmute [role name]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Creates a mute role and automatically configures it for each channel.
+                            <br/><br/>Create a muted role named "Muted" - ie. !settings createmute Muted
+                            <br/><br/>Command restriction: <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Disable Command -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">disable [command name]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Disables a bot command.
+                            <br/><br/>Disable the "talk" command - ie. !settings disable talk
+                            <br/><br/>Known extra commands:
+                            <ul>
+                                <li>ping</li>
+                                <li>talk</li>
+                            </ul>
+                            <br/>Command restriction: <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div> 
+                    &nbsp;&nbsp;
+                    <!-- Enable Command -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">enable [command name]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Enables a bot command.
+                            <br/><br/>Enable the "ping" command - ie. !settings enable ping
+                            <br/><br/>Known extra commands:
+                            <ul>
+                                <li>ping</li>
+                                <li>talk</li>
+                            </ul>
+                            <br/>Command restriction: <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div> 
+                    &nbsp;&nbsp;
+                    <!-- Grant -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">grant ["role"] [permission]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Grants a role a permission.
+                            <br/><br/>ie. !grant "b'crats" prune
+                            <br/><br/>Grantable permissions:
+                            <br><ul>
+                                <li>administrator - Gives the role access to all parts of the bot.</li>
+                                <li>ban - Allows the role to ban a user with the ban command.</li>
+                                <li>changemodlogs - Allows the role to modify the moderation logs, ie. changing the ban reason.</li>
+                                <li>grant - Allows the role to grant/revoke these permissions to roles.</li>
+                                <li>kick - Allows the role to kick a user with the kick command.</li>
+                                <li>logs - Gives the role to view the chat logs.</li>
+                                <li>modlogs - Gives the role access to the moderation logs.</li>
+                                <li>mute - Allows the role to mute a user with the mute command.</li>
+                                <li>override - Allows the role to override specific channel permissions, 
+                                    ie. using bot commands in a channel where the bot is disabled.
+                                <li>prune - Allows the role to delete messages with the prune command.</li>
+                                <li>resolve - Allows the role to remove a moderation log.</li>
+                                <li>roleadd - Allows the role to add a role to a user.</li>
+                                <li>roleremove - Allows the role to remove a role from a user.</li>
+                                <li>unmute - Allows the role to unmute a user with the un-mute command.</li>
+                                <li>warn - Allows the role to warn a user with the warn command.</li>
+                            </ul>
+                            <br/>Command restriction: <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Grantable -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">grantable ["role"] [yes|no]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Set a role grantable or un-grantable.
+                            <br/><br/>Set a role grantable - ie. !grantable "b'crats" yes
+                            <br/>Set a role un-grantable - ie. !grantable "mods" no
+                            <br/><br/>Command restriction: <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Ignore -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">ignore [parameter] [channel(s)]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Manage channels with the bot commands ignored.
+                            <br/><br/>Set channel "main" to ignore bot commands - ie. !settings ignore add #main
+                            <br/><br/>Set channel "main" and "wiki-discussion" to ignore bot commands and overwrite previous settings - ie. !settings ignore set #main #wiki-discussion
+                            <br/><br/>Remove channel "main" from ignoring bot commands - ie. !settings ignore remove main
+                            <br/><br/>List channels where bot commands are ignored - ie. !settings ignore list
+                            <br/><br/><b>Note: There is no separator used to separate the list of channels.</b>
+                            <br/><br/>Command restriction: <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Join -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">join [message]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Sets the join message for a new user.
+                            <br/><br/>ie. !settings join Welcome {user} to the official My Little Pony Discord server. We now have {members} in our server.
+                            <br/><b/>Note: {user} automatically subsitutes the username. {members} automatically subsitutes the total number of users in the server.</b>
+                            <br/><br/>Command restriction: <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Join Channel -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">join_channel [channel|off]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Set where the user joined message will show.
+                            <br/><br/>Show in main channel - ie. !settings join_channel #main
+                            <br/>Turn off the user joined message - ie. !settings join_channel off
+                            <br/><br/>Command restriction: <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>                    
+                    &nbsp;&nbsp;
+                    <!-- Leave -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">leave [message]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Sets the leave message after a user leaves.
+                            <br/><br/>ie. !settings leave {user} has left the server. We now have {members} in our server.
+                            <br/><b/>Note: {user} automatically subsitutes the username. {members} automatically subsitutes the total number of users in the server.</b>
+                            <br/><br/>Command restriction: <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Leave Channel -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">leave_channel [channel|off]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Set where the user left message will show.
+                            <br/><br/>Show in main channel - ie. !settings leave_channel #main
+                            <br/>Turn off the user left message - ie. !settings leave_channel off
+                            <br/><br/>Command restriction: <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div> 
+                    &nbsp;&nbsp;
+                    <!-- Log Channel  -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">logs [channel]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Sets the logging channel.
+                            <br/><br/>Set the log channel to "logs" - ie. !settings logs #logs
+                            <br/><br/>Command restriction: <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div> 
+                    &nbsp;&nbsp;
+                    <!-- Log Level -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">loglevel [level]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Sets the logging level.
+                            <br/><br/>ie. !settings loglevel 2
+                            <br/><br/>Log levels:
+                            <ul>
+                                <li>0 - No logging.</li>
+                                <li>1 - Bot commands only</li>
+                                <li>2 - Chat and bot commands</li>
+                            </ul>
+                            <b>Note: The default log level is 1.</b>
+                            <br/><br/>Command restriction: <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Muted Role -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">muted_role [role name]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Sets the muted role, which disallows users from sending messages.
+                            <br/><br/>ie. !settings muted_role Muted
+                            <br/><b>Note: The role must be configured for each channel. Use the createmute command to automatically set it up.</b>
+                            <br/><br/>Command restriction: <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Prefix -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">prefix [command area] [prefix]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Sets the prefix of the bot.
+                            <br/><br/>Set the main bot system prefix to ! - ie. !settings prefix main !
+                            <br/>Set the galaxy game bot system prefix to $ - ie. galaxy simulator:simulator:$
+                            <br/><br/>Command restriction: <span style="color:#DDAA00;">Wiki Administators</span>.
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            
+        </main>
+
+    </div>
+</body>
+
+</html>

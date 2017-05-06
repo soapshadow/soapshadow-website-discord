@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+/* All layouts */
+.layout .layout-title {
+    font-family: 'Rubik', sans-serif;
+}
+
+.layout .nav-link {
+    font-family: 'Rubik', sans-serif;
+}
+
+.layout-drawer span.nav-link-group.mdl-navigation__link {
+    color: #651fff;
+    font-weight: bold;
+}
+
+.card-font {
+    font-family: 'Rubik', sans-serif;
+}
+
+.card-button-font {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+
+/* Home layout */
+.layout-home .card-text.mdl-card {
+    width: 712px;
+    margin: auto;
+    height: max-content;
+}
+
+.layout-home .card-text>.mdl-card__title {
+    color: #fff;
+    height: 100px;
+    background-color: #651fff;
+}
+
+.layout-home .card-button.mdl-card {
+    width: 712px;
+    margin: auto;
+    height: max-content;
+}
+
+.layout-home .card-button>.mdl-card__title {
+    color: #fff;
+    height: 100px;
+    background-color: #651fff;
+}
+
+/* Bot pages */
+.layout-bot-cmds .card-text.mdl-card {
+    width: 1024px;
+    margin: auto;
+    height: max-content;
+}
+
+.layout-bot-cmds .card-text>.mdl-card__title {
+    color: #fff;
+    height: max-content;
+    background-color: #651fff;
+}
+
+.layout-bot-cmds .links {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+/* Mobile devices - portrait */
+@media screen and (max-width: 425px) and (orientation: portrait) {
+    .layout-home .card-text.mdl-card {
+        width: auto;
+        margin: auto;
+        height: max-content;
+    }
+    .layout-home .card-button.mdl-card {
+        width: auto;
+        margin: auto;
+        height: max-content;
+    }
+    .layout-bot-cmds .card-text.mdl-card {
+    width: auto;
+    margin: auto;
+    height: max-content;
+    }
+}
+
+
+/* Mobile devices - landscape */
+@media screen and (min-width: 425px) and (max-width: 768px) and (orientation: landscape) {
+    .layout-home .card-text.mdl-card {
+        width: auto;
+        margin: auto;
+        height: max-content;
+    }
+    .layout-home .card-button.mdl-card {
+        width: auto;
+        margin: auto;
+        height: max-content;
+    }
+    .layout-bot-cmds .card-text.mdl-card {
+    width: auto;
+    margin: auto;
+    height: max-content;
+    }
+}
+
+/* Tablets
+/* 1024+ = large tablets, laptops and pcs ie. iPad Pro in landscape = 1366px.
+*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .layout-home .card-text.mdl-card {
+        width: auto;
+        margin: auto;
+        height: max-content;
+    }
+    .layout-home .card-button.mdl-card {
+        width: auto;
+        margin: auto;
+        height: max-content;
+    }
+    .layout-bot-cmds .card-text.mdl-card {
+    width: auto;
+    margin: auto;
+    height: max-content;
+    }
+}
